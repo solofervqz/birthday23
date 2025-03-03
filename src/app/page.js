@@ -7,73 +7,72 @@ const wishlistItems = [
   {
     title: "Cartitas",
     description: "Me encanta recibir mensajes escritos, son pequeños recuerdos especiales",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/1.png",
   },
   {
     title: "Ligas para cabello",
     description: "Se me pierden a cada rato, actualmente solo tengo una",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/2.png",
   },
   {
     title: "Gomitas de sandía",
     description: "Un antojito dulce que nunca está de más. Con chile mejor",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/3.png",
   },
   {
     title: "Velas aromáticas",
     description: "Olores suaves como lavanda, pastel, rosa, etc.",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/4.png",
   },
   {
     title: "Pines",
     description: "Para mi delantal de barista. Temas: café, programación",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/5.png",
   },
   {
     title: "Tarjeta de regalo",
     description: "De H&M, Lefties o Stradivarius, para elegir lo que más me guste",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/6.png",
   },
   {
     title: "Liga para estirar",
     description: "Para mejorar mi flexibilidad y relajar los músculos",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/7.png",
   },
   {
     title: "Organizador de cables",
     description: "Me ayudaría a mantener mis cables en orden y sin enredos",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/8.png",
   },
   {
     title: "Conjunto para ejercicio (talla S)",
     description: "Para entrenar con más estilo y comodidad",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/9.png",
   },
   {
     title: "Cartucho para Instax",
     description: "Para seguir capturando momentos sin preocuparme por quedarme sin papel",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/10.png",
   },
-
   {
     title: "Fotos de nosotros impresas",
     description: "Porque los recuerdos en físico tienen un valor especial",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/11.png",
   },
   {
     title: "Calcetines para ejercicio",
     description: "Nunca sobran, y siempre termino perdiendo algunos",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/12.png",
   },
   {
     title: "Cobijas",
     description: "Nunca hay demasiadas cobijas, especialmente en días fríos",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/13.png",
   },
   {
     title: "Cuadernos",
     description: "Siempre útiles para organizar ideas, anotar pendientes o simplemente escribir",
-    imageUrl: "/placeholder.svg?height=100&width=100",
+    imageUrl: "/images/14.png",
   },
 ];
 
