@@ -1,101 +1,95 @@
 import Image from "next/image";
+import CurvedText from "../components/CurvedText";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen flex items-center justify-center bg-[#f55989] p-4">
+      <div className="max-w-4xl w-full">
+        {/* Desktop version - horizontal layout */}
+        <div className="hidden md:flex bg-[#f55989] text-white rounded-lg overflow-hidden relative">
+          <div className="flex-1 p-8">
+            <div className="space-y-4">
+              <p className="text-md uppercase tracking-wider">Estas cordialmente invitado a la</p>
+              <h1 className="text-7xl font-bold leading-tight">
+                FER&apos;S VINYL
+                <br />
+                EVENING
+              </h1>
+              <div className="mt-8">
+                <h2 className="text-2xl font-bold">9 DE MARZO 2025</h2>
+                <p className="mt-1">EN PUNTO ESTELAR CAFÉ</p>
+                <p className="mt-1">4:00 P.M. A 9:00 P.M.</p>
+              </div>
+              <div className="mt-6">
+                <span className="bg-white text-pink-500 px-4 py-1 rounded-full text-sm font-medium">
+                  COVER: $100 PESOS POR PERSONA
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="relative flex-1 flex items-center justify-center">
+            <div className="relative w-96 h-96">
+              <Image
+                src="/Vinil.png"
+                alt="Vinyl Record"
+                fill
+                className="object-contain vinyl-spin"
+                priority
+              />
+               <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <path id="circlePath" d="M50,85 A35,35 0 1,1 50.1,85" fill="none" />
+                </defs>
+                <text className="text-[4px] fill-white">
+                  <textPath href="#circlePath" startOffset="5%">
+                    DJ BEBIDAS | DISCADA | SNAKS | CITY POP | LILA VINYL
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Mobile version - vertical layout */}
+        <div className="md:hidden bg-pink-500 text-white rounded-lg overflow-hidden">
+          <div className="p-6 text-center">
+            <p className="text-sm uppercase tracking-wider">Estas cordialmente invitado a la</p>
+            <h1 className="text-4xl font-bold mt-2 leading-tight">
+              FER&apos;S VINYL
+              <br />
+              EVENING
+            </h1>
+          </div>
+
+          <div className="relative w-full flex justify-center py-4">
+            <div className="relative w-56 h-56">
+              <Image
+                src="/Vinil.png"
+                alt="Vinyl Record"
+                fill
+                className="object-contain vinyl-spin"
+                priority
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-white text-xs rotate-[30deg] absolute -right-12 top-10 w-32">
+                  DJ | BEBIDAS | DISCADA | SNAKS | CITY POP |  LUIS MIGUEL
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 text-center">
+            <h2 className="text-2xl font-bold">9 DE MARZO 2025</h2>
+            <p className="mt-1">EN PUNTO ESTELAR CAFÉ</p>
+            <p className="mt-1">4:00 P.M. A 9:00 P.M.</p>
+            <div className="mt-6">
+              <span className="bg-white text-pink-500 px-4 py-1 rounded-full text-sm font-medium">
+                COVER: $100 PESOS POR PERSONA
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
