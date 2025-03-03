@@ -3,6 +3,11 @@ import { WishlistCard } from "../components/wishlist-card"
 
 const wishlistItems = [
   {
+    title: "Cartitas",
+    description: "Me encanta recibir mensajes escritos, son pequeños recuerdos especiales",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
     title: "Ligas para cabello",
     description: "Se me pierden a cada rato, actualmente solo tengo una",
     imageUrl: "/placeholder.svg?height=100&width=100",
@@ -22,10 +27,72 @@ const wishlistItems = [
     description: "Para mi delantal de barista. Temas: café, programación",
     imageUrl: "/placeholder.svg?height=100&width=100",
   },
-]
+  {
+    title: "Tarjeta de regalo",
+    description: "De H&M, Lefties o Stradivarius, para elegir lo que más me guste",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Liga para estirar",
+    description: "Para mejorar mi flexibilidad y relajar los músculos",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Organizador de cables",
+    description: "Me ayudaría a mantener mis cables en orden y sin enredos",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Conjunto para ejercicio (talla S)",
+    description: "Para entrenar con más estilo y comodidad",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Cartucho para Instax",
+    description: "Para seguir capturando momentos sin preocuparme por quedarme sin papel",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
 
-// Duplicar items para la versión de escritorio
-const desktopItems = [...wishlistItems, ...wishlistItems, ...wishlistItems]
+  {
+    title: "Fotos de nosotros impresas",
+    description: "Porque los recuerdos en físico tienen un valor especial",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Calcetines para ejercicio",
+    description: "Nunca sobran, y siempre termino perdiendo algunos",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Cobijas",
+    description: "Nunca hay demasiadas cobijas, especialmente en días fríos",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Cuadernos",
+    description: "Siempre útiles para organizar ideas, anotar pendientes o simplemente escribir",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+];
+
+const notWantedItems = [
+  {
+    title: "Peluches",
+    description: "No me gustan mucho, prefiero otro tipo de regalos",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Perfumes",
+    description: "No quiero perfumes, ya tengo varios y me duran mucho",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+  {
+    title: "Maquillaje",
+    description: "No lo uso tanto, así que prefiero otra cosa",
+    imageUrl: "/placeholder.svg?height=100&width=100",
+  },
+];
+
 
 export default function VinylInvitation() {
   return (
@@ -74,7 +141,7 @@ export default function VinylInvitation() {
                   </defs>
                   <text className="text-[4px] fill-white">
                     <textPath href="#circlePath" startOffset="5%">
-                      DJ | BEBIDAS | DISCADA | SNAKS | CITY POP |  LUIS MIGUEL  
+                      DJ | BEBIDAS | DISCADA | SNAKS | CITY POP |  LUIS MIGUEL
                     </textPath>
                   </text>
                 </svg>
@@ -112,7 +179,7 @@ export default function VinylInvitation() {
                   </defs>
                   <text className="text-[4px] fill-white">
                     <textPath href="#circlePathMobile" startOffset="5%">
-                    DJ | BEBIDAS | DISCADA | SNAKS | CITY POP |  LUIS MIGUEL
+                      DJ | BEBIDAS | DISCADA | SNAKS | CITY POP |  LUIS MIGUEL
                     </textPath>
                   </text>
                 </svg>
@@ -149,10 +216,16 @@ export default function VinylInvitation() {
               <WishlistCard key={index} {...item} />
             ))}
           </div>
+          {/* Tablet Wishlist (2 columnas) */}
+          <div className="hidden md:grid lg:hidden grid-cols-2 gap-4">
+            {wishlistItems.map((item, index) => (
+              <WishlistCard key={index} {...item} />
+            ))}
+          </div>
 
           {/* Desktop Wishlist */}
           <div className="hidden md:grid grid-cols-3 gap-4">
-            {desktopItems.map((item, index) => (
+            {wishlistItems.map((item, index) => (
               <WishlistCard key={index} {...item} />
             ))}
           </div>
