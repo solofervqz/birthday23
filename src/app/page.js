@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { WishlistCard } from "../components/wishlist-card"
+import { Countdown } from "../components/countdown";
 
 const wishlistItems = [
   {
@@ -197,6 +198,13 @@ export default function VinylInvitation() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Countdown Section */}
+      <div className="px-4 my-6 ">
+        <div className="max-w-4xl mx-auto">
+          <Countdown />
         </div>
       </div>
 
