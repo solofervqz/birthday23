@@ -54,7 +54,18 @@ export function Countdown() {
                     <div className="text-sm text-gray-600">Segundos</div>
                 </div>
             </div>
+
+            {/* Botón Confirmar Asistencia */}
+            <div className="mt-8">
+                <a
+                    href="https://forms.gle/CEWYaEq98DeNq2LC7" // Reemplaza con el enlace real
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition-all duration-200"
+                >
+                    Confirmar Asistencia
+                </a>
+            </div>
         </div>
     )
 }
-
