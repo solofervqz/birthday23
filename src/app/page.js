@@ -123,7 +123,7 @@ export default function VinylInvitation() {
                 </div>
               </div>
             </div>
-            <div className="relative flex-1 flex items-center justify-center">
+            <div className="relative flex-1 flex items-center mr-4 justify-center">
               <div className="relative w-96 h-96">
                 {/* Imagen del vinilo */}
                 <Image
@@ -136,20 +136,20 @@ export default function VinylInvitation() {
 
                 {/* Imagen del texto curvado ahora más grande y debajo del disco */}
                 <Image
-                  src="/texto.png" // Asegúrate de que el archivo está en `public`
+                  src="/texto.png"
                   alt="Texto curvado"
-                  width={550} // Aumenta el tamaño para que el texto sea más visible
-                  height={550}
-                  className="absolute bottom-[-41%] left-1/2 -translate-x-1/2 w-auto h-[100%] object-contain pointer-events-none"
+                  width={500}
+                  height={500}
+                  className="absolute bottom-[-4%] left-1/2 -translate-x-1/2 w-auto h-auto object-contain scale-130"
                 />
-              </div>
 
+              </div>
             </div>
           </div>
 
           {/* Mobile version - vertical layout */}
           <div className="md:hidden bg-[#f55989] text-white rounded-lg overflow-hidden">
-            <div className="p-6 text-center">
+            <div className="p-4 text-center">
               <p className="text-sm uppercase tracking-wider">Estas cordialmente invitado a la</p>
               <h1 className="text-4xl font-bold mt-2 leading-tight">
                 FER&apos;S VINYL
@@ -173,7 +173,7 @@ export default function VinylInvitation() {
                   alt="Texto curvado"
                   width={175} // Aumenta el tamaño para que el texto sea más visible
                   height={540}
-                  className="absolute bottom-[-41%] left-1/2 -translate-x-1/2 w-[100%] h-[100%] object-contain pointer-events-none"
+                  className="absolute bottom-[-29%] left-1/2 -translate-x-1/2 w-[100%] h-[100%] object-contain scale-130"
                 />
               </div>
             </div>
