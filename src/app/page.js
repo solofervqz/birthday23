@@ -125,6 +125,7 @@ export default function VinylInvitation() {
             </div>
             <div className="relative flex-1 flex items-center justify-center">
               <div className="relative w-96 h-96">
+                {/* Imagen del vinilo */}
                 <Image
                   src="/Vinil.png"
                   alt="Vinyl Record"
@@ -132,21 +133,17 @@ export default function VinylInvitation() {
                   className="object-contain vinyl-spin"
                   priority
                 />
-                <svg
-                  className="absolute inset-0 w-full h-full"
-                  viewBox="0 0 100 100"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <path id="circlePath" d="M50,85 A35,35 0 1,1 50.1,85" fill="none" />
-                  </defs>
-                  <text className="text-[4px] fill-white">
-                    <textPath href="#circlePath" startOffset="5%">
-                      DJ | BEBIDAS | DISCADA | SNAKS | CITY POP |  LUIS MIGUEL
-                    </textPath>
-                  </text>
-                </svg>
+
+                {/* Imagen del texto curvado ahora más grande y debajo del disco */}
+                <Image
+                  src="/texto.png" // Asegúrate de que el archivo está en `public`
+                  alt="Texto curvado"
+                  width={550} // Aumenta el tamaño para que el texto sea más visible
+                  height={550}
+                  className="absolute bottom-[-40%] left-1/2 -translate-x-1/2 w-auto h-[100%] object-contain pointer-events-none"
+                />
               </div>
+
             </div>
           </div>
 
@@ -242,7 +239,7 @@ export default function VinylInvitation() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

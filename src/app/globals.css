@@ -34,5 +34,5 @@ body {
 }
 
 .vinyl-spin {
-  animation: spin 20s linear infinite;
+  animation: spin 5s linear infinite;
 }
