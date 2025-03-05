@@ -140,7 +140,7 @@ export default function VinylInvitation() {
                   alt="Texto curvado"
                   width={550} // Aumenta el tamaño para que el texto sea más visible
                   height={550}
-                  className="absolute bottom-[-40%] left-1/2 -translate-x-1/2 w-auto h-[100%] object-contain pointer-events-none"
+                  className="absolute bottom-[-41%] left-1/2 -translate-x-1/2 w-auto h-[100%] object-contain pointer-events-none"
                 />
               </div>
 
