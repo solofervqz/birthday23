@@ -167,20 +167,14 @@ export default function VinylInvitation() {
                   className="object-contain vinyl-spin"
                   priority
                 />
-                <svg
-                  className="absolute inset-0 w-full h-full"
-                  viewBox="0 0 100 100"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <path id="circlePathMobile" d="M50,85 A35,35 0 1,1 50.1,85" fill="none" />
-                  </defs>
-                  <text className="text-[4px] fill-white">
-                    <textPath href="#circlePathMobile" startOffset="5%">
-                      DJ | BEBIDAS | DISCADA | SNAKS | CITY POP |  LUIS MIGUEL
-                    </textPath>
-                  </text>
-                </svg>
+                {/* Imagen del texto curvado ahora más grande y debajo del disco */}
+                <Image
+                  src="/texto.png" // Asegúrate de que el archivo está en `public`
+                  alt="Texto curvado"
+                  width={175} // Aumenta el tamaño para que el texto sea más visible
+                  height={540}
+                  className="absolute bottom-[-41%] left-1/2 -translate-x-1/2 w-[100%] h-[100%] object-contain pointer-events-none"
+                />
               </div>
             </div>
 
